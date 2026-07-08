@@ -1,0 +1,21 @@
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #6c757d;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #0077b5; 
+  transform: translateY(-3px);
+  display: inline-block;
+}
+
+.social-icon:hover .bi-envelope-fill {
+  color: #ff6060; 
+}

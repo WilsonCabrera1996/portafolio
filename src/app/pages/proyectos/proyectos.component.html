@@ -1,0 +1,22 @@
+<section class="proyectos-page">
+  <div class="proj-card container-fluid" *ngFor="let p of proyectos; let i = index">
+    <div class="proj-header row">
+      <div class=" proj-thumb col-md-4">
+        <img [src]="p.imagen" [alt]="p.nombre" />
+      </div>
+      <div class=" proj-meta col-md-6">
+       
+          <h2 class="proj-name">
+             {{ p.nombre }}
+          </h2>
+          <div class="proj-badges">
+            <span class="badge main">{{ p.mainTag }}</span>
+            <span class="badge" *ngFor="let tag of p.tags">{{ tag }}</span>
+          </div>
+          <p class="proj-sub">{{ p.subtitulo }}</p>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
